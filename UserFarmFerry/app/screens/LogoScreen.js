@@ -14,7 +14,7 @@ export default function LogoScreen() {
         <ArrowLeft size={24} color="#16a34a" />
       </TouchableOpacity>
       <Image
-        source={require('../../assets/images/Icon2.jpeg')}
+        source={require('../../assets/images/logo.jpg')}
         style={{ width: 500, height: 500, borderRadius: 24 }}
         resizeMode="contain"
       />

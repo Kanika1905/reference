@@ -6,7 +6,7 @@ const LoadingScreen = () => {
     <View className="flex-1 bg-white justify-center items-center">
       <ActivityIndicator size="large" color="#059669" />
       <Text className="text-gray-600 mt-4 text-lg font-medium">
-        Loading FarmFerry...
+        Loading VendorNest...
       </Text>
     </View>
   );

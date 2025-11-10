@@ -42,7 +42,7 @@ export default function PhoneVerificationScreen() {
           {/* Logo and Branding */}
           <View className="items-center mb-8">
             <Image 
-              source={require('../../assets/images/Icon2.jpeg')} 
+              source={require('../../assets/images/logo.jpg')} 
               className="w-38 h-38"
               resizeMode="contain"
             />

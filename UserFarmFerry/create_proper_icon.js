@@ -96,7 +96,7 @@ function create512x512PNG() {
 }
 
 try {
-  const iconPath = path.join(__dirname, 'assets', 'images', 'OutlookLogo2.png');
+  const iconPath = path.join(__dirname, 'assets', 'images', 'logo.jpg');
   const pngBuffer = create512x512PNG();
   
   fs.writeFileSync(iconPath, pngBuffer);
@@ -109,7 +109,7 @@ try {
   
   // Fallback: create minimal PNG
   try {
-    const iconPath = path.join(__dirname, 'assets', 'images', 'OutlookLogo2.png');
+    const iconPath = path.join(__dirname, 'assets', 'images', 'logo.jpg');
     const minimalPng = createMinimalPNG();
     fs.writeFileSync(iconPath, minimalPng);
     console.log('✅ Created minimal fallback PNG icon');

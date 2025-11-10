@@ -26,7 +26,7 @@ const createBasicPNG = () => {
 };
 
 // Write the PNG file
-const iconPath = path.join(__dirname, 'assets', 'images', 'OutlookLogo2.png');
+const iconPath = path.join(__dirname, 'assets', 'images', 'logo.png');
 const pngBuffer = createBasicPNG();
 
 fs.writeFileSync(iconPath, pngBuffer);

@@ -6,7 +6,7 @@ import { Image, Text, TouchableOpacity, View } from 'react-native';
 import { useAppContext } from '../../context/AppContext';
 import { useUserLocation } from '../../hooks/useUserLocation';
 
-export default function AppBar({ showBack = false, title = "FarmFerry" }) {
+export default function AppBar({ showBack = false, title = "VendorNest" }) {
   const navigation = useNavigation();
   const { cartItems, unreadNotificationCount } = useAppContext();
   const { address } = useUserLocation(); 
@@ -50,14 +50,14 @@ export default function AppBar({ showBack = false, title = "FarmFerry" }) {
         ) : (
           <TouchableOpacity onPress={() => navigation.navigate('LogoScreen')}>
             <Image
-              source={require('../../../assets/images/Icon2.jpeg')}
+              source={require('../../../assets/images/logo.jpg')}
               style={{ width: 58, height: 58, borderRadius: 12, marginRight: 12, marginTop: 4 }}
               resizeMode="cover"
             />
           </TouchableOpacity>
         )}
         <View>
-           <Text className="text-lg font-bold text-green-800 mt-4">FarmFerry</Text>
+           <Text className="text-lg font-bold text-green-800 mt-4">VendorNest</Text>
           <View className="flex-row items-center">
             <MapPin size={14} color="green" className="mr-1" />
             <Text className="text-base font-xl text-green-700">

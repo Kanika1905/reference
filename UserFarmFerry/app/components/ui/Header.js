@@ -22,7 +22,7 @@ const responsiveValue = (small, medium, large) => {
 
 export default function Header({
   // Basic props
-  title = "FarmFerry",
+  title = "VendorNest",
   showBack = false,
   showLogo = false,
   showLocation = false,
@@ -146,7 +146,7 @@ export default function Header({
                  style={{ marginRight: responsiveValue(12, 16, 20) }}
                >
                  <Image
-                   source={require('../../../assets/images/Icon2.jpeg')}
+                   source={require('../../../assets/images/logo.jpg')}
                    style={{
                      width: responsiveValue(55, 60, 64),
                      height: responsiveValue(55, 60, 64),
@@ -327,7 +327,7 @@ export const HeaderVariants = {
       showLogo={true}
       showLocation={true}
       showNotifications={true}
-      title="FarmFerry"
+      title="VendorNest"
       {...props}
     />
   ),
